@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #a1d2f3;
+}
+
+
+.banner {
+  display: flex;
+  justify-content:center;
+  align-items:end;
+}
+
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+
+.boton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.juegos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  
+  margin: 50px 0;
+}
+
+.juego {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.juego:hover {
+  transform: translateY(-10px);
+}
+
+.juego img {
+  width: 100%;
+  height:60%;
+
+}
+
+.juego h3 {
+  margin: 10px;
+  font-size: 24px;
+}
+
+.juego p {
+  margin: 10px;
+  font-size: 18px;
+}
+
+.boton-compra {
+  display: block;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-compra:hover {
+  background-color: #2980b9;
+}
+
+.consolas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin: 50px 0;
+}
+
+.consola {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.consola:hover {
+  transform: translateY(-10px);
+}
+
+.consola img {
+  width: 100%;  
+  height:42%;
+
+}
+
+
+
+.consola h3 {
+  margin: 10px;
+  font-size: 24px;
+}
+
+.consola p {
+  margin: 10px;
+  font-size: 18px;
+}
+
+#accesorios {
+  background-color: #87f2fabc;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#accesorios h2 {
+  margin: 0;
+  font-size: 36px;
+  color: #333;
+}
+
+.accesorios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  margin: 50px 0;
+}
+
+.accesorio {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.accesorio:hover {
+  transform: translateY(-10px);
+}
+
+.accesorio img {
+  width: 100%;
+  height:60%;
+
+}
+
+.accesorio h3 {
+  margin: 10px;
+  font-size: 24px;
+}
+
+.accesorio p {
+  margin: 10px;
+  font-size: 18px;
+}
+
+footer {
+    background-color: #0f08d4fb;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .social-icons a:hover {
+    color: #1da1f2;
+  }
+  
+  .fa-facebook-f {
+    color: #ffffff;
+  }
+  
+  .fa-linkedin {
+    color: #1da1f2;
+  }
+  
+  .fa-instagram {
+    color: #e1306c;
+  }
+  
+  .fa-github {
+    color: #ffffff;
+  }
+  
+.juegos-grid,
+.consolas-grid,
+.accesorios-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.juego h3,
+.juego p,
+.consola h3,
+.consola p,
+.accesorio h3,
+.accesorio p {
+  font-size: 16px;
+}
+
+

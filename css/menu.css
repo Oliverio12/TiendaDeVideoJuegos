@@ -1,0 +1,123 @@
+.navbar {
+  background-color: #1066b2;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  max-width: 100%;
+  margin: 0;
+}
+
+.navbar-logo {
+  font-size: 28px;
+  color: #ffc9c9;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+  position: relative;
+  left: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navbar-toggle span:first-child {
+  transform-origin: left center;
+}
+
+.navbar-toggle span:last-child {
+  transform-origin: left center;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin: 0 10px;
+  display: flex;
+  align-items: end;
+}
+
+.navbar-menu a {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nvar:hover {
+  background-color: rgb(78, 15, 202);
+  padding: 5px;
+  border: solid;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #5f9fd7;
+    
+  }
+
+  .navbar-menu.show {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .navbar-menu ul {
+    display: flex;
+    flex-direction: inherit;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+.navbar-toggle.show span:first-child {
+  transform: rotate(45deg);
+}
+
+.navbar-toggle.show span:last-child {
+  transform: rotate(-45deg);
+}
+
+.navbar-toggle.show span:nth-child(2) {
+  opacity: 0;
+  transform: rotate(0);
+}
